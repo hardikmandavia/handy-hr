@@ -1,14 +1,17 @@
-import { AppProps } from 'next/app';
+import { AppProps } from "next/app";
+import StyledComponentsRegistry from "../../lib/registry";
 
 import Layout from "../components/Layout";
 
-import '../globals.css';
+import "../globals.css";
 
-function App({Component, pageProps}: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <StyledComponentsRegistry>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </StyledComponentsRegistry>
   );
 }
 export default App;
