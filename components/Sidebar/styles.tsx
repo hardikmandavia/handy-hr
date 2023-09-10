@@ -8,5 +8,6 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const MenuItemsContainer = styled(Box)`
+  margin-top: 130px;
   padding: 8px;
 `;

@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aldrich" />
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>

@@ -1,12 +1,25 @@
 import styled from "styled-components";
+import { Box } from "@mui/material";
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
   display: flex;
-  background: #00022e;
-  height: 50px;
   align-items: center;
   justify-content: center;
-  color: #fc86aa;
+  background: transparent;
+  width: 100%;
+  position: absolute;
+`;
+
+export const HeaderContainer = styled(Box)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98vw;
+  height: 110px;
+  background: #FFF;
+  border-radius: 25px;
+  margin: 12px;
+  border-bottom: 8px solid #00A4F8;
 `;
 
 export const IconContainer = styled.div`

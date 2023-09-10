@@ -5,12 +5,11 @@ import { MenuItemsContainer, SidebarContainer } from "./styles";
 import { MENU_ITEM_MAP, MenuItemKey } from "../../constants/menu-items";
 
 interface Props {
-  isOpened: boolean;
 }
 
-export default function Sidebar({ isOpened }: Props) {
+export default function Sidebar({ }: Props) {
   const styles = {
-    width: isOpened ? "20vw" : "0vw",
+    width: "12vw",
     transition: "width 0.5s",
   };
 

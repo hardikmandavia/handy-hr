@@ -1,20 +1,14 @@
 import { Menu, ChevronLeft } from "@styled-icons/material";
 
-import { HeaderContainer, IconContainer, TitleContainer } from "./styles";
+import { Container, HeaderContainer, IconContainer, TitleContainer } from "./styles";
 
-interface Props {
-  isOpened: boolean;
-  toggleDrawer: () => void;
-}
+interface Props {}
 
-export default function Header({ isOpened, toggleDrawer }: Props) {
-
+export default function Header({}: Props) {
   return (
-    <HeaderContainer>
-      <IconContainer onClick={toggleDrawer}>
-        {isOpened ? <ChevronLeft /> : <Menu />}
-      </IconContainer>
-      <TitleContainer>Header</TitleContainer>
-    </HeaderContainer>
+    <Container>
+      <HeaderContainer></HeaderContainer>
+      {/* <TitleContainer>Header</TitleContainer> */}
+    </Container>
   );
 }

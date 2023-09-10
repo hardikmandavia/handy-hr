@@ -19,12 +19,11 @@ export default function DashboardLayout({ children }: Props) {
 
   return (
     <Container>
-      <Header isOpened={isOpened} toggleDrawer={toggleDrawer} />
+      <Header />
       <Content>
-        <Sidebar isOpened={isOpened} />
+        <Sidebar />
         <PageContainer>{children}</PageContainer>
       </Content>
-      <Footer />
     </Container>
   );
 }
